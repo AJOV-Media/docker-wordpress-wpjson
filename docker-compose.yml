@@ -12,7 +12,6 @@ services:
         environment:
            MYSQL_ROOT_PASSWORD: root
            MYSQL_DATABASE: wpdata
-           #MYSQL_ROOT_HOST: 127.0.0.1
            MYSQL_USER: dev
            MYSQL_PASSWORD: dev123
         ports:
