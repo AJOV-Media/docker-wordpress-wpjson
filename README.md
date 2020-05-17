@@ -33,3 +33,13 @@ email: info@yoursite.com
 
 **Consumer Secret**: cs_30d030a4f3d6a1e132a9b0bdb8fc35f0b81171c7
 
+## HOST
+
+database right now is using woocommerce.local:8095 http port you can edit your hosts...
+
+1. windows - "Drive:\Windows\System32\hosts"
+2. mac - "/etc/hosts"
+
+ipaddress_of_your_container woocommerce.local
+
+ex: 192.168.99.100       woocommerce.local
