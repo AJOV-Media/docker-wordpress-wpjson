@@ -7,6 +7,8 @@ services:
         restart: always
         command: --default-authentication-plugin=mysql_native_password
         volumes:
+           - ./certificates/woo.crt:/etc/ssl/app.crt
+           - ./certificates/woo.key:/etc/ssl/app.key
            - ./init.db/:/docker-entrypoint-initdb.d/
            - ./uploads:/opt/app/public/wp-content/uploads/
            - wpjsonpersist:/var/lib/mysql
@@ -18,6 +20,7 @@ services:
         ports:
            - "3309:3306"
            - "8090:80"
+           - "8091:443"
 volumes:
     wpjsonpersist:
     
