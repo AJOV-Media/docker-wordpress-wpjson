@@ -43,3 +43,13 @@ database right now is using woocommerce.local:8095 http port you can edit your h
 ipaddress_of_your_container woocommerce.local
 
 ex: 192.168.99.100       woocommerce.local
+
+## SSL
+
+Can be access at https://woocommerce.local:8091/ 
+
+![Valid SSL](https://github.com/AJOV-Media/docker-wordpress-wpjson/blob/master/screenshots/ssl_local.jpg)
+
+In windows just run **certmgr.msc** and under **Current User\Trusted Root Certification Authorities** in <u>Certificates > All Tasks > Import..</u>.  browse for woo.crt.
+
+**Important!**: this works only with  woocommerce.local domain
