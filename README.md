@@ -19,6 +19,8 @@ once on container console type
 
 ## Wordpress credentials (run with init db)
 
+Database on this repository will require : https://woocommerce.local:8091/ as path 
+
 /wp-admin
 
 username: admin
